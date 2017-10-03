@@ -2,6 +2,7 @@ import os, random, struct, sys
 from Crypto.Cipher import AES
 
 from optparse import OptionParser
+import getpass
 
 import hashlib
 
@@ -30,7 +31,8 @@ cwd = os.getcwd()
 if(options.p):
     password = options.p
 else:
-    password = raw_input("please specify your password")
+    #password = raw_input("please specify your password")
+    password = getpass.getpass("please specify your password")
 
 key = hashlib.sha256(password).digest()
 
