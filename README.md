@@ -4,6 +4,17 @@ commandline AES encryption. adapted from code from Eli Bendersky.
 original code found here:
 http://eli.thegreenplace.net/2010/06/25/aes-encryption-of-files-in-python-with-pycrypto
 
+setup:
+</br>
+Using python2
+```
+sudo apt-get install python-dev
+```
+```
+pip install pycrypto
+```
+
+
 USAGE:
 </br>
 case 1 encrypting
